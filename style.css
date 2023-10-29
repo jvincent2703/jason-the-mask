@@ -1,0 +1,81 @@
+:root{
+    --bg: #6A041D;
+    --ngr: #000000;
+    --racist: #ffffff;
+}
+
+*, *::before, ::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--bg);
+    height: 100vh;
+    margin: 0;
+    position: relative;
+}
+
+.container{
+    background: var(--bg);
+    display: flex;
+    margin: 0;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.mask{
+    width: 37vh;
+    height: 45vh;
+    align-items: center;
+    background: var(--racist);
+    position: relative;
+    border-radius: 50%;
+    justify-content: center;
+    display: flex;
+}
+
+.fore{
+    position: absolute;
+    font-size: 9rem;
+    top: -5rem;
+}
+
+.fore::after{
+    content: ".";
+    font-size: 9rem;
+    top: 2.2rem;
+    left: 1.3rem;
+    position: absolute;
+}
+
+.eyes{
+    font-size: 27rem;
+    top: -15rem;
+    position: absolute;
+}
+
+.nose{
+    font-size: 9rem;
+    position: absolute;
+}
+
+.nose::before{
+    content: "..";
+    font-size: 9rem;
+    top: 2rem;
+    position: absolute;
+}
+.nose::after{
+    content: "..";
+    font-size: 9rem;
+    top: 4rem;
+    left: 0rem;
+    position: absolute;
+}
